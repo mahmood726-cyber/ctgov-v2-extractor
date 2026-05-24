@@ -8,7 +8,7 @@ class CTGovExtractor {
     }
 
     async getTrialResults(nctId) {
-        const res = await fetch(\/\?format=json);
+        const res = await fetch(this.baseUrl + '/' + nctId + '?format=json');
         const data = await res.json();
         return this._parseResults(data);
     }
