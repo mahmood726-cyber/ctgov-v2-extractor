@@ -11,3 +11,5 @@ jobs:
         with:
           node-version: '22'
       - run: npm test
+      - name: Validate a real posted CT.gov outcome
+        run: npm run test:live
