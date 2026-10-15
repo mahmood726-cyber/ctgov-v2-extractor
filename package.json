@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test test.mjs"
+    "test": "node --test test.mjs",
+    "test:live": "node integration.live.mjs"
   },
   "engines": {
     "node": ">=18"
